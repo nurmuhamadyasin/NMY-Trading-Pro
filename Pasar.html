@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pilih Pasar - NMY Trading Pro</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+        body {
+            background: linear-gradient(135deg, #0f172a, #1e293b);
+            color: white;
+            min-height: 100vh;
+            padding: 20px;
+        }
+        header {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+        h1 {
+            font-size: 22px;
+            color: #facc15;
+            margin-bottom: 10px;
+        }
+        .subtitle {
+            color: #94a3b8;
+            font-size: 14px;
+        }
+        .pasar-container {
+            max-width: 400px;
+            margin: 0 auto;
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+        .pasar-card {
+            background: rgba(30, 41, 59, 0.8);
+            border: 1px solid rgba(255,255,255,0.1);
+            border-radius: 12px;
+            padding: 20px;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+        .pasar-card:hover {
+            border-color: #facc15;
+            transform: translateY(-3px);
+        }
+        .pasar-nama {
+            font-size: 18px;
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+        .pasar-desc {
+            font-size: 13px;
+            color: #94a3b8;
+        }
+        .kembali {
+            display: block;
+            text-align: center;
+            margin-top: 30px;
+            color: #facc15;
+            text-decoration: none;
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Pilih Pasar 📊</h1>
+        <p class="subtitle">Silakan pilih pasar yang ingin Anda analisis</p>
+    </header>
+
+    <div class="pasar-container">
+        <div class="pasar-card" onclick="pilihPasar('kripto')">
+            <div class="pasar-nama">🪙 Kripto</div>
+            <div class="pasar-desc">Bitcoin, Ethereum, dan aset digital lainnya</div>
+        </div>
+
+        <div class="pasar-card" onclick="pilihPasar('forex')">
+            <div class="pasar-nama">💵 Forex</div>
+            <div class="pasar-desc">Pasangan mata uang dunia</div>
+        </div>
+
+        <div class="pasar-card" onclick="pilihPasar('saham')">
+            <div class="pasar-nama">📈 Saham</div>
+            <div class="pasar-desc">Indeks dan saham perusahaan unggulan</div>
+        </div>
+    </div>
+
+    <a href="index.html" class="kembali">← Kembali ke Beranda</a>
+
+    <script>
+        function pilihPasar(jenis) {
+            window.location.href = 'grafik.html?pasar=' + jenis;
+        }
+    </script>
+</body>
+</html>
