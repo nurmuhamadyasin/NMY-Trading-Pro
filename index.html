@@ -3,51 +3,136 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NMY Trading Pro</title>
     <style>
-        *{margin:0;padding:0;box-sizing:border-box;font-family:'segoe UI,Arial,sans-serif;}
-        body{background:linear-gradient(135deg,#0f172a,#1e293b);color:white;min-height:100vh;display:flex;flex-direction:column;align-items:center;justify-content:center;padding:30px 20px}
-        h1{font-size:28px;color:#facc15;margin-bottom:8px;text-align:center}
-        .sub-judul{font-size:16px;color:#94a3b8;margin-bottom:30px;text-align:center}
-        .kartu{background:rgba(30,41,59,.7);border:1px solid rgba(250,204,21,.25);border-radius:16px;padding:30px;text-align:center;max-width:420px;width:100%}
-        .kartu h2{font-size:22px;margin-bottom:12px}
-        .kartu p{font-size:15px;color:#cbd5e1;margin-bottom:25px;line-height:1.6}
-        .tombol{background:linear-gradient(90deg,#facc15,#eab308);color:#000;font-weight:bold;font-size:17px;padding:12px 30px;border-radius:30px;text-decoration:none;display:inline-block;margin-bottom:15px}
-        .panduan{color:#94a3b8;font-size:14px;text-decoration:none;border-bottom:1px dashed #475569;padding-bottom:2px;display:inline-block;margin-bottom:25px}
-        .panduan:hover{color:#facc15}
-        .tentang{color:#94a3b8;font-size:14px;text-decoration:none;margin-bottom:12px;display:block}.tentang:hover{color:#facc15}
-        .fitur{display:flex;justify-content:space-around;flex-wrap:wrap;gap:10px;margin-top:10px}
-        .fitur div{text-align:center;font-size:13px;color:#94a3b8}
-        .fitur span{font-size:20px;display:block;margin-bottom:4px}
-        .footer{margin-top:30px;font-size:12px;color:#475569;text-align:center}
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Arial, sans-serif;
+        }
+
+        body {
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: 30px 20px;
+            
+            background: 
+                radial-gradient(ellipse at top left, rgba(59, 130, 246, 0.1), transparent 50%),
+                radial-gradient(ellipse at top right, rgba(245, 158, 11, 0.08), transparent 50%),
+                linear-gradient(135deg, #050508 0%, #101428 40%, #1a1f3a 70%, #0f1420 100%);
+        }
+
+        img {
+            width: 120px;
+            height: auto;
+            display: block;
+            margin: 0 auto 20px;
+            border-radius: 12px;
+        }
+
+        .sub-judul {
+            font-size: 16px;
+            color: #93c5fd;
+            margin-bottom: 30px;
+            text-align: center;
+            letter-spacing: 1px;
+        }
+
+        .kartu {
+            background: rgba(15, 23, 42, 0.65);
+            border: 1px solid rgba(250, 204, 21, 0.15);
+            border-radius: 24px;
+            padding: 40px 30px;
+            text-align: center;
+            max-width: 420px;
+            width: 100%;
+            box-shadow: 0 0 30px rgba(250, 204, 21, 0.05);
+            backdrop-filter: blur(10px);
+        }
+
+        .kartu h2 {
+            font-size: 24px;
+            color: #ffffff;
+            margin-bottom: 12px;
+        }
+
+        .kartu p {
+            font-size: 15px;
+            color: #cbd5e1;
+            margin-bottom: 30px;
+            line-height: 1.6;
+        }
+
+        .tombol {
+            background: linear-gradient(90deg, #facc15, #eab308);
+            color: #000000;
+            font-weight: bold;
+            font-size: 17px;
+            padding: 14px 40px;
+            border-radius: 50px;
+            text-decoration: none;
+            display: inline-block;
+            margin-bottom: 25px;
+            border: none;
+            box-shadow: 0 4px 15px rgba(250, 204, 21, 0.25);
+            transition: all 0.3s ease;
+        }
+
+        .tombol:hover {
+            transform: translateY(-2px);
+        }
+
+        .tautan-bawah {
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+            margin-bottom: 25px;
+        }
+
+        .tautan-bawah a {
+            color: #94a3b8;
+            font-size: 14px;
+            text-decoration: none;
+            padding-bottom: 2px;
+            border-bottom: 1px solid transparent;
+            transition: all 0.2s ease;
+        }
+
+        .tautan-bawah a:hover {
+            border-bottom-color: #94a3b8;
+        }
+
+        .footer {
+            margin-top: 30px;
+            font-size: 12px;
+            color: #475569;
+            text-align: center;
+        }
     </style>
 </head>
 <body>
-    <img src="photo_6246660784347878807_v.jpg" alt="NMY Trading Pro Logo" style="width:120px; height:auto; display:block; margin:0 auto 20px; border-radius:12px;">
+    <img src="photo_6246660784347878807_v.jpg" alt="NMY Trading Pro Logo">
     <p class="sub-judul">Platform Analisis Pasar Cerdas</p>
 
     <div class="kartu">
         <h2>Selamat Datang! 🎉</h2>
-        <p>Pilih Pasar Untuk Mulai Melihat Grafik dan Sinyal AI.</p>
+        <p>Pilih pasar untuk mulai melihat grafik dan sinyal AI.</p>
 
-<a href="pasar.html" class="tombol">Mulai Jelajahi &rarr;</a>
+
+
+
         
-<a href="panduan.html" class="panduan">📖 Baca Panduan Pengguna</a>
-<a href="tentang.html" class="panduan">ℹ️ Tentang Aplikasi</a>
-        <div class="fitur">
-            
-<a href="grafik.html?pasar=kripto" style="text-decoration:none; color:inherit; text-align:center; display:block;">
-  <div style="font-size:22px; color:#f7931a;">₿<br>Kripto</div>
-</a>
-<a href="grafik.html?pasar=saham" style="text-decoration:none; color:inherit; text-align:center; display:block;">
-  <div style="font-size:22px; color:#22c55e;">📈<br>Saham</div>
-</a>
-<a href="grafik.html?pasar=forex" style="text-decoration:none; color:inherit; text-align:center; display:block;">
-  <div style="font-size:22px; color:#3b82f6;">💵<br>Forex</div>
-</a>
-<a href="#" style="text-decoration:none; color:inherit; text-align:center; display:block;">
-  <div style="font-size:22px; color:#a855f7;">🤖<br>Sinyal AI</div>
-</a>
-        </a> 
+        <a href="pasar.html" class="tombol">Mulai &rarr;</a>
+        
+        <div class="tautan-bawah">
+            <a href="panduan.html">Baca Panduan Pengguna</a>
+            <a href="tentang.html">Tentang Aplikasi</a>
+        </div>
+    </div>
 
     <div class="footer">© 2026 NMY Trading Pro — Semua Fitur Bersifat Simulasi & Edukasi</div>
 </body>
