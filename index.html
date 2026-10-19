@@ -1,107 +1,54 @@
-/* Grid Pasar */
-        .grid-pasar {
-            display: grid;
-            grid-template-columns: repeat(4, 1fr);
-            gap: 15px;
-            margin-bottom: 30px;
-        }
-
-        .item-pasar {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            padding: 18px 10px;
-            background: rgba(30, 41, 59, 0.5);
-            border: 1px solid rgba(148, 163, 184, 0.15);
-            border-radius: 14px;
-            text-decoration: none;
-            transition: all 0.3s ease;
-        }
-
-        .item-pasar:hover {
-            transform: translateY(-4px);
-            border-color: rgba(250, 204, 21, 0.4);
-            background: rgba(30, 41, 59, 0.7);
-            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
-        }
-
-        .ikon-pasar {
-            font-size: 26px;
-            margin-bottom: 8px;
-        }
-
-        .nama-pasar {
-            font-size: 13px;
-            font-weight: 600;
-        }
-
-        .kripto .ikon-pasar { color: #f7931a; }
-        .kripto .nama-pasar { color: #f7931a; }
-
-        .saham .ikon-pasar { color: #22c55e; }
-        .saham .nama-pasar { color: #22c55e; }
-
-        .forex .ikon-pasar { color: #3b82f6; }
-        .forex .nama-pasar { color: #3b82f6; }
-
-        .ai .ikon-pasar { color: #a855f7; }
-        .ai .nama-pasar { color: #a855f7; }
-
-        .footer {
-            font-size: 12px;
-            color: #475569;
-            text-align: center;
-            margin-top: 10px;
-        }
-
-        @media (max-width: 360px) {
-            .grid-pasar {
-                grid-template-columns: repeat(2, 1fr);
-                gap: 12px;
-            }
-        }
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        *{margin:0;padding:0;box-sizing:border-box;font-family:'segoe UI,Arial,sans-serif;}
+        body{background:linear-gradient(135deg,#0f172a,#1e293b);color:white;min-height:100vh;display:flex;flex-direction:column;align-items:center;justify-content:center;padding:30px 20px}
+        h1{font-size:28px;color:#facc15;margin-bottom:8px;text-align:center}
+        .sub-judul{font-size:16px;color:#94a3b8;margin-bottom:30px;text-align:center}
+        .kartu{background:rgba(30,41,59,.7);border:1px solid rgba(250,204,21,.25);border-radius:16px;padding:30px;text-align:center;max-width:420px;width:100%}
+        .kartu h2{font-size:22px;margin-bottom:12px}
+        .kartu p{font-size:15px;color:#cbd5e1;margin-bottom:25px;line-height:1.6}
+        .tombol{background:linear-gradient(90deg,#facc15,#eab308);color:#000;font-weight:bold;font-size:17px;padding:12px 30px;border-radius:30px;text-decoration:none;display:inline-block;margin-bottom:15px}
+        .panduan{color:#94a3b8;font-size:14px;text-decoration:none;border-bottom:1px dashed #475569;padding-bottom:2px;display:inline-block;margin-bottom:25px}
+        .panduan:hover{color:#facc15}
+        .tentang{color:#94a3b8;font-size:14px;text-decoration:none;margin-bottom:12px;display:block}.tentang:hover{color:#facc15}
+        .fitur{display:flex;justify-content:space-around;flex-wrap:wrap;gap:10px;margin-top:10px}
+        .fitur div{text-align:center;font-size:13px;color:#94a3b8}
+        .fitur span{font-size:20px;display:block;margin-bottom:4px}
+        .footer{margin-top:30px;font-size:12px;color:#475569;text-align:center}
     </style>
 </head>
 <body>
-
     <img src="photo_6246660784347878807_v.jpg" alt="NMY Trading Pro Logo" style="width:120px; height:auto; display:block; margin:0 auto 20px; border-radius:12px;">
     <p class="sub-judul">Platform Analisis Pasar Cerdas</p>
 
-    <div class="kartu-utama">
-        <h1>Selamat Datang! 🎉</h1>
-        <p class="deskripsi">Pilih Pasar Untuk Mulai Melihat Grafik dan Sinyal AI.</p>
+    <div class="kartu">
+        <h2>Selamat Datang! 🎉</h2>
+        <p>Pilih Pasar Untuk Mulai Melihat Grafik dan Sinyal AI.</p>
 
-        <a href="pasar.html" class="tombol-utama">Mulai Jelajahi →</a>
+<a href="pasar.html" class="tombol">Mulai Jelajahi &rarr;</a>
+        
+<a href="panduan.html" class="panduan">📖 Baca Panduan Pengguna</a>
+<a href="tentang.html" class="panduan">ℹ️ Tentang Aplikasi</a>
+        <div class="fitur">
+            
+<a href="grafik.html?pasar=kripto" style="text-decoration:none; color:inherit; text-align:center; display:block;">
+  <div style="font-size:22px; color:#f7931a;">₿<br>Kripto</div>
+</a>
+<a href="grafik.html?pasar=saham" style="text-decoration:none; color:inherit; text-align:center; display:block;">
+  <div style="font-size:22px; color:#22c55e;">📈<br>Saham</div>
+</a>
+<a href="grafik.html?pasar=forex" style="text-decoration:none; color:inherit; text-align:center; display:block;">
+  <div style="font-size:22px; color:#3b82f6;">💵<br>Forex</div>
+</a>
+<a href="#" style="text-decoration:none; color:inherit; text-align:center; display:block;">
+  <div style="font-size:22px; color:#a855f7;">🤖<br>Sinyal AI</div>
+</a>
+        </a> 
 
-        <div class="tautan-bawah">
-            <a href="panduan.html">📖 Baca Panduan Pengguna</a>
-            <a href="tentang.html">ℹ️ Tentang Aplikasi</a>
-        </div>
-
-        <div class="grid-pasar">
-            <a href="grafik.html?pasar=kripto" class="item-pasar kripto">
-                <span class="ikon-pasar">₿</span>
-                <span class="nama-pasar">Kripto</span>
-            </a>
-            <a href="grafik.html?pasar=saham" class="item-pasar saham">
-                <span class="ikon-pasar">📈</span>
-                <span class="nama-pasar">Saham</span>
-            </a>
-            <a href="grafik.html?pasar=forex" class="item-pasar forex">
-                <span class="ikon-pasar">💵</span>
-                <span class="nama-pasar">Forex</span>
-            </a>
-            <a href="#" class="item-pasar ai">
-                <span class="ikon-pasar">🤖</span>
-                <span class="nama-pasar">Sinyal AI</span>
-            </a>
-        </div>
-
-        <div class="footer">
-            © 2026 NMY Trading Pro — Semua Fitur Bersifat Simulasi & Edukasi
-        </div>
-    </div>
-
+    <div class="footer">© 2026 NMY Trading Pro — Semua Fitur Bersifat Simulasi & Edukasi</div>
 </body>
 </html>
-            
