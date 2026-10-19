@@ -42,6 +42,8 @@
             margin-bottom: 15px;
             cursor: pointer;
             transition: 0.3s;
+            text-decoration: none;
+            display: block;
         }
         .kartu:hover {
             border-color: #facc15;
@@ -84,20 +86,20 @@
     </header>
 
     <div class="kontainer">
-        <div class="kartu" onclick="window.location.href='grafik.html?pasar=kripto'">
+        <a href="grafik.html?pasar=kripto" class="kartu">
             <h2>[ Kripto ]</h2>
             <p>Bitcoin, Ethereum & aset digital lainnya</p>
-        </div>
+        </a>
 
-        <div class="kartu" onclick="window.location.href='grafik.html?pasar=saham'">
+        <a href="grafik.html?pasar=saham" class="kartu">
             <h2>[ Saham ]</h2>
             <p>Perusahaan terkemuka dunia</p>
-        </div>
+        </a>
 
-        <div class="kartu" onclick="window.location.href='grafik.html?pasar=forex'">
+        <a href="grafik.html?pasar=forex" class="kartu">
             <h2>[ Forex ]</h2>
             <p>Pasar mata uang global</p>
-        </div>
+        </a>
     </div>
 
     <div class="bawah">
