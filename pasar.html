@@ -15,27 +15,27 @@
             background: linear-gradient(135deg, #0f172a, #1e293b);
             color: white;
             min-height: 100vh;
-            padding: 20px;
+            padding: 30px 20px;
         }
         header {
             text-align: center;
             margin-bottom: 30px;
         }
         h1 {
-            font-size: 22px;
+            font-size: 24px;
             color: #facc15;
-            margin-bottom: 10px;
+            margin-bottom: 8px;
         }
         .sub-judul {
-            color: #94a3b8;
             font-size: 15px;
+            color: #94a3b8;
         }
-        .kontainer-pasar {
+        .kontainer {
             max-width: 400px;
             margin: 0 auto;
         }
-        .kartu-pasar {
-            background: rgba(30, 41, 59, 0.8);
+        .kartu {
+            background: rgba(30, 41, 59, 0.7);
             border: 1px solid rgba(250, 204, 21, 0.25);
             border-radius: 12px;
             padding: 20px;
@@ -43,19 +43,19 @@
             cursor: pointer;
             transition: 0.3s;
         }
-        .kartu-pasar:hover {
+        .kartu:hover {
             border-color: #facc15;
-            transform: translateY(-3px);
+            transform: translateY(-2px);
         }
-        .kartu-pasar h2 {
+        .kartu h2 {
             font-size: 18px;
             margin-bottom: 5px;
         }
-        .kartu-pasar p {
-            font-size: 13px;
+        .kartu p {
+            font-size: 14px;
             color: #94a3b8;
         }
-        .tautan-bawah {
+        .bawah {
             text-align: center;
             margin-top: 30px;
         }
@@ -72,6 +72,7 @@
         .kembali {
             color: #facc15;
             text-decoration: none;
+            font-size: 15px;
         }
     </style>
 </head>
@@ -81,24 +82,24 @@
         <p class="sub-judul">Pilih salah satu untuk melihat grafik & sinyal AI</p>
     </header>
 
-    <div class="kontainer-pasar">
-        <div class="kartu-pasar" onclick="window.location.href='grafik.html?pasar=kripto'">
+    <div class="kontainer">
+        <div class="kartu" onclick="window.location.href='grafik.html?pasar=kripto'">
             <h2>🪙 Kripto</h2>
             <p>Bitcoin, Ethereum & aset digital lainnya</p>
         </div>
 
-        <div class="kartu-pasar" onclick="window.location.href='grafik.html?pasar=saham'">
+        <div class="kartu" onclick="window.location.href='grafik.html?pasar=saham'">
             <h2>📈 Saham</h2>
             <p>Perusahaan terkemuka dunia</p>
         </div>
 
-        <div class="kartu-pasar" onclick="window.location.href='grafik.html?pasar=forex'">
+        <div class="kartu" onclick="window.location.href='grafik.html?pasar=forex'">
             <h2>💵 Forex</h2>
             <p>Pasar mata uang global</p>
         </div>
     </div>
 
-    <div class="tautan-bawah">
+    <div class="bawah">
         <a href="panduan.html" class="panduan-link">📖 Baca Panduan Pengguna</a>
         <br>
         <a href="index.html" class="kembali">← Kembali ke Beranda</a>
