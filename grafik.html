@@ -1,0 +1,18 @@
+const data = dataPasar[jenisPasar] || dataPasar.kripto;
+        
+        document.getElementById('judul-pasar').textContent = data.judul;
+        document.getElementById('sub-judul').textContent = data.deskripsi;
+        document.getElementById('harga').textContent = data.harga;
+        document.getElementById('perubahan').textContent = data.perubahan;
+        
+        const sinyalEl = document.getElementById('sinyal-ai');
+        if (data.sinyal === 'naik') {
+            sinyalEl.className = 'sinyal-ai sinyal-naik';
+            sinyalEl.innerHTML = '🟢 NAIK — Potensi Menguat';
+        } else {
+            sinyalEl.className = 'sinyal-ai sinyal-turun';
+            sinyalEl.innerHTML = '🔴 TURUN — Potensi Melemah';
+        }
+    </script>
+</body>
+</html>
