@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>NMY Trading Pro — Platform Analisis Pasar Cerdas</title>
+    <title>Tentang Aplikasi - NMY Trading Pro</title>
     <style>
         * {
             margin: 0;
@@ -15,83 +15,54 @@
             background: linear-gradient(135deg, #0f172a, #1e293b);
             color: white;
             min-height: 100vh;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
             padding: 30px 20px;
         }
+        header {
+            text-align: center;
+            margin-bottom: 35px;
+        }
         h1 {
-            font-size: 28px;
+            font-size: 24px;
             color: #facc15;
             margin-bottom: 8px;
-            text-align: center;
         }
         .sub-judul {
-            font-size: 16px;
+            font-size: 15px;
             color: #94a3b8;
-            margin-bottom: 35px;
-            text-align: center;
         }
-        .kartu {
-            background: rgba(30, 41, 59, 0.7);
-            border: 1px solid rgba(250, 204, 21, 0.25);
-            border-radius: 16px;
-            padding: 35px 25px;
-            text-align: center;
+        .kontainer {
             max-width: 420px;
-            width: 100%;
+            margin: 0 auto;
         }
-        .kartu h2 {
-            font-size: 22px;
+        .bagian {
+            background: rgba(30, 41, 59, 0.7);
+            border: 1px solid rgba(250, 204, 21, 0.2);
+            border-radius: 12px;
+            padding: 20px;
+            margin-bottom: 15px;
+        }
+        .bagian h2 {
+            font-size: 17px;
+            color: #facc15;
             margin-bottom: 12px;
         }
-        .kartu p {
-            font-size: 15px;
-            color: #cbd5e1;
-            margin-bottom: 25px;
-            line-height: 1.6;
-        }
-        .tombol-mulai {
-            background: linear-gradient(90deg, #facc15, #eab308);
-            color: #000000;
-            font-weight: bold;
-            font-size: 17px;
-            padding: 12px 30px;
-            border-radius: 30px;
-            text-decoration: none;
-            display: inline-block;
-            margin-bottom: 18px;
-        }
-        .tautan-bawah {
-            margin-top: 10px;
-        }
-        .tautan {
-            display: block;
-            color: #94a3b8;
+        .bagian p, .bagian li {
             font-size: 14px;
-            text-decoration: none;
-            margin-bottom: 10px;
+            color: #cbd5e1;
+            line-height: 1.7;
         }
-        .tautan:hover {
-            color: #facc15;
+        .bagian ul {
+            padding-left: 20px;
         }
-        .fitur {
-            margin-top: 25px;
-            display: flex;
-            justify-content: space-around;
-            flex-wrap: wrap;
-            gap: 10px;
+        .bagian li {
+            margin-bottom: 6px;
         }
-        .fitur div {
-            text-align: center;
-            font-size: 13px;
-            color: #94a3b8;
-        }
-        .fitur span {
-            font-size: 20px;
+        .kembali {
             display: block;
-            margin-bottom: 4px;
+            text-align: center;
+            margin-top: 30px;
+            color: #facc15;
+            text-decoration: none;
         }
         .footer {
             margin-top: 30px;
@@ -103,27 +74,41 @@
 </head>
 <body>
 
-    <h1>NMY Trading Pro</h1>
-    <p class="sub-judul">Platform Analisis Pasar Cerdas</p>
+    <header>
+        <h1>ℹ️ Tentang Aplikasi</h1>
+        <p class="sub-judul">Siapa kami dan apa tujuan kami</p>
+    </header>
 
-    <div class="kartu">
-        <h2>Selamat Datang! 🎉</h2>
-        <p>Halaman beranda aplikasi kita sudah siap. Pilih pasar untuk mulai melihat grafik dan sinyal AI yang membantu menganalisis pergerakan harga secara real-time.</p>
-        
-        <a href="pasar.html" class="tombol-mulai">Mulai Jelajahi →</a>
+    <div class="kontainer">
 
-        <div class="tautan-bawah">
-            <a href="panduan.html" class="tautan">📖 Baca Panduan Pengguna</a>
-            <a href="tentang.html" class="tautan">ℹ️ Tentang Aplikasi</a>
+        <div class="bagian">
+            <h2>Apa itu NMY Trading Pro?</h2>
+            <p>NMY Trading Pro adalah platform analisis pasar yang dirancang untuk membantu siapa saja memahami pergerakan harga di pasar keuangan dengan lebih mudah dan cerdas. Kami menyediakan antarmuka yang sederhana namun informatif untuk belajar tentang pasar Kripto, Saham, dan Forex.</p>
         </div>
 
-        <div class="fitur">
-            <div><span>[ K ]</span>Kripto</div>
-            <div><span>[ S ]</span>Saham</div>
-            <div><span>[ F ]</span>Forex</div>
-            <div><span>[ AI ]</span>Sinyal AI</div>
+        <div class="bagian">
+            <h2>Misi Kami</h2>
+            <p>Membuka akses informasi pasar yang lebih mudah dipahami oleh semua kalangan, serta memberikan ruang belajar yang aman sebelum terjun ke pasar nyata.</p>
         </div>
+
+        <div class="bagian">
+            <h2>Fitur Utama</h2>
+            <ul>
+                <li>Tampilan grafik yang jelas dan mudah dibaca</li>
+                <li>Sinyal AI untuk membantu analisis pola harga</li>
+                <li>Mendukung pasar Kripto, Saham, dan Forex</li>
+                <li>Panduan pengguna yang lengkap dan sederhana</li>
+            </ul>
+        </div>
+
+        <div class="bagian">
+            <h2>Catatan Penting</h2>
+            <p>Aplikasi ini bersifat simulasi dan alat bantu edukasi saja. Sinyal dan informasi yang ditampilkan bukan merupakan saran keuangan atau ajakan bertransaksi. Selalu kelola risiko dengan bijak.</p>
+        </div>
+
     </div>
+
+    <a href="index.html" class="kembali">&larr; Kembali ke Beranda</a>
 
     <div class="footer">
         © 2026 NMY Trading Pro — Semua fitur bersifat simulasi edukasi
