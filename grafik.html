@@ -1,4 +1,18 @@
-const data = dataPasar[jenisPasar] || dataPasar.kripto;
+deskripsi: 'Pasar Mata Uang Global',
+                harga: 'Rp 16.250,00',
+                perubahan: '-0.15% 🔴',
+                sinyal: 'turun'
+            },
+            saham: {
+                judul: '📈 Pasar Saham',
+                deskripsi: 'Indeks & Saham Terkemuka',
+                harga: '7.250,50',
+                perubahan: '+0.85% 🟢',
+                sinyal: 'naik'
+            }
+        };
+
+        const data = dataPasar[jenisPasar] || dataPasar.kripto;
         
         document.getElementById('judul-pasar').textContent = data.judul;
         document.getElementById('sub-judul').textContent = data.deskripsi;
