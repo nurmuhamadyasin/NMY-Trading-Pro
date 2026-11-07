@@ -1,16 +1,26 @@
-deskripsi: 'Pasar Mata Uang Global',
-                harga: 'Rp 16.250,00',
-                perubahan: '-0.15% 🔴',
-                sinyal: 'turun'
+        const dataPasar = {
+        kripto: {
+                judul: '📈 Pasar Kripto',
+                deskripsi: 'Bitcoin, Etherium & Aset Digital Lainnya',
+                harga: 'Rp 7.250,50',
+                perubahan: '+0.85% 🔴',+0.85% 🟢',
+                sinyal: 'Naik'
             },
-            saham: {
+        saham: {
                 judul: '📈 Pasar Saham',
-                deskripsi: 'Indeks & Saham Terkemuka',
-                harga: '7.250,50',
-                perubahan: '+0.85% 🟢',
-                sinyal: 'naik'
+                deskripsi: 'Indeks & Saham Perusahaan Terkemuka Dunia',
+                harga: '15.890,00',
+                perubahan: '-0.32% 🔴',
+                sinyal: 'Turun'
             }
-      
+      forex: {
+                judul: '📈 Pasar Forex',
+                deskripsi: 'Mata Uang Global',
+                harga: '16.120,45',
+                perubahan: '+1.20% 🔴',
+                sinyal: 'Naik'
+            }
+      };
 
         const urlParams = new
         URLSearchParams(window.location.search);
@@ -32,4 +42,10 @@ deskripsi: 'Pasar Mata Uang Global',
         }
     </script>
 </body>
+<h2 id="pasar"></h2>
+<p id="sub"></p>
+<div id="harga"></div>
+<div id="perubahan"></div>
+<div id="sinyal Ai"></div>
+
 </html>
