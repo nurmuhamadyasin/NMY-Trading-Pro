@@ -13,6 +13,8 @@ deskripsi: 'Pasar Mata Uang Global',
       
 
         const data = datapasar[pasar] || datapasar.kripto;
+        const urlParams = new UrlSearchParams(window.location.search);
+        const pasar = urlParams.get('pasar')|| 'kripto'
         
         document.getElementById('pasar').textContent = data;
         document.getElementById('sub').textContent = data.deskripsi;
