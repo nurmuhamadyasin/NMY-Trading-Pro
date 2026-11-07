@@ -4,30 +4,30 @@
                 deskripsi: 'Bitcoin, Etherium & Aset Digital Lainnya',
                 harga: 'Rp 7.250,50',
                 perubahan: '+0.85% 🟢',
-                sinyal: 'Naik'
+                sinyal: 'naik'
             },
         saham: {
                 judul: '📈 Pasar Saham',
                 deskripsi: 'Indeks & Saham Perusahaan Terkemuka Dunia',
                 harga: '15.890,00',
                 perubahan: '-0.32% 🔴',
-                sinyal: 'Turun'
+                sinyal: 'turun'
             }
       forex: {
                 judul: '📈 Pasar Forex',
                 deskripsi: 'Mata Uang Global',
                 harga: '16.120,45',
                 perubahan: '+1.20% 🔴',
-                sinyal: 'Naik'
+                sinyal: 'naik'
             }
       };
 
         const urlParams = new
         URLSearchParams(window.location.search);
-        const pasar = urlParams.get('pasar')|| 'kripto';
+        const pasar = urlParams.get('pasar') || 'kripto';
         const data = dataPasar[pasar] || dataPasar.kripto;
         
-        document.getElementById('pasar').textContent = data;
+        document.getElementById('pasar').textContent = data.judul;
         document.getElementById('sub').textContent = data.deskripsi;
         document.getElementById('harga').textContent = data.harga;
         document.getElementById('perubahan').textContent = data.perubahan;
@@ -46,6 +46,6 @@
 <p id="sub"></p>
 <div id="harga"></div>
 <div id="perubahan"></div>
-<div id="sinyal Ai"></div>
+<div id="sinyal-ai"></div>
 
 </html>
