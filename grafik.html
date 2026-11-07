@@ -12,10 +12,10 @@ deskripsi: 'Pasar Mata Uang Global',
             }
       
 
-        const data = dataPasar[judul-Pasar] || dataPasar.kripto;
+        const data = datapasar[pasar] || datapasar.kripto;
         
-        document.getElementById('judul-pasar').textContent = data.judul;
-        document.getElementById('sub-judul').textContent = data.deskripsi;
+        document.getElementById('pasar').textContent = data;
+        document.getElementById('sub').textContent = data.deskripsi;
         document.getElementById('harga').textContent = data.harga;
         document.getElementById('perubahan').textContent = data.perubahan;
         
