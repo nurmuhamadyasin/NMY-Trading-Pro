@@ -14,7 +14,7 @@ deskripsi: 'Pasar Mata Uang Global',
 
         const urlParams = new
         URLSearchParams(window.location.search);
-        const pasar = urlParams.get('pasar')|| 'kripto'
+        const pasar = urlParams.get('pasar')|| 'kripto';
         const data = dataPasar[pasar] || dataPasar.kripto;
         
         document.getElementById('pasar').textContent = data;
