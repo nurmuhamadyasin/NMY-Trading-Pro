@@ -1,54 +1,129 @@
-</script>
-</body>
-</html>
-const dataPasar = {
-        kripto: {
-                judul: '📈 Pasar Kripto',
-                deskripsi: 'Bitcoin, Etherium & Aset Digital Lainnya',
-                harga: 'Rp 7.250,50',
-                perubahan: '+0.85% 🟢',
-                sinyal: 'naik'
-            },
-        saham: {
-                judul: '📈 Pasar Saham',
-                deskripsi: 'Indeks & Saham Perusahaan Terkemuka Dunia',
-                harga: '15.890,00',
-                perubahan: '-0.32% 🔴',
-                sinyal: 'turun'
-            }
-      forex: {
-                judul: '📈 Pasar Forex',
-                deskripsi: 'Mata Uang Global',
-                harga: '16.120,45',
-                perubahan: '+1.20% 🔴',
-                sinyal: 'naik'
-            }
-      };
-
-        const urlParams = new
-        URLSearchParams(window.location.search);
-        const pasar = urlParams.get('pasar') || 'kripto';
-        const data = dataPasar[pasar] || dataPasar.kripto;
-        
-        document.getElementById('pasar').textContent = data.judul;
-        document.getElementById('sub').textContent = data.deskripsi;
-        document.getElementById('harga').textContent = data.harga;
-        document.getElementById('perubahan').textContent = data.perubahan;
-        
-        const sinyalEl = document.getElementById('sinyal-ai');
-        if (data.sinyal === 'naik') {
-            sinyalEl.className = 'sinyal-ai sinyal-naik';
-            sinyalEl.innerHTML = '🟢 NAIK — Potensi Menguat';
-        } else {
-            sinyalEl.className = 'sinyal-ai sinyal-turun';
-            sinyalEl.innerHTML = '🔴 TURUN — Potensi Melemah';
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detail Pasar - NMY Trading Pro</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Arial, sans-serif;
         }
-    </script>
-</body>
-<h2 id="pasar"></h2>
-<p id="sub"></p>
-<div id="harga"></div>
-<div id="perubahan"></div>
-<div id="sinyal-ai"></div>
+        body {
+            background: linear-gradient(135deg, #0f172a, #1e293b);
+            color: white;
+            min-height: 100vh;
+            padding: 40px 20px;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+        h2 {
+            font-size: 26px;
+            color: #facc15;
+            margin-bottom: 10px;
+            text-align: center;
+        }
+        #sub {
+            color: #94a3b8;
+            text-align: center;
+            margin-bottom: 30px;
+            font-size: 16px;
+        }
+        #harga {
+            font-size: 32px;
+            font-weight: bold;
+            text-align: center;
+            margin-bottom: 15px;
+        }
+        #perubahan {
+            font-size: 20px;
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        #sinyal-ai {
+            text-align: center;
+            padding: 15px;
+            border-radius: 10px;
+            font-size: 18px;
+            font-weight: 500;
+        }
+        .sinyal-naik {
+            background: rgba(34, 197, 94, 0.2);
+            color: #4ade80;
+            border: 1px solid #22c55e;
+        }
+        .sinyal-turun {
+            background: rgba(239, 68, 68, 0.2);
+            color: #f87171;
+            border: 1px solid #ef4444;
+        }
+        .kembali {
+            display: block;
+            text-align: center;
+            margin-top: 40px;
+            color: #60a5fa;
+            text-decoration: none;
+        }
+        .kembali:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
 
+    <h2 id="pasar"></h2>
+    <p id="sub"></p>
+    <div id="harga"></div>
+    <div id="perubahan"></div>
+    <div id="sinyal-ai"></div>
+
+    <a href="pasar.html" class="kembali">← Kembali ke Pilihan Pasar</a>
+
+<script>
+const dataPasar = {
+    kripto: {
+        judul: '📈 Pasar Kripto',
+        deskripsi: 'Bitcoin, Ethereum & Aset Digital Lainnya',
+        harga: 'Rp 7.250,50',
+        perubahan: '+0.85% 🟢',
+        sinyal: 'naik'
+    },
+    saham: {
+        judul: '📈 Pasar Saham',
+        deskripsi: 'Indeks & Saham Perusahaan Terkemuka Dunia',
+        harga: 'Rp 15.890,00',
+        perubahan: '-0.32% 🔴',
+        sinyal: 'turun'
+    },
+    forex: {
+        judul: '📈 Pasar Forex',
+        deskripsi: 'Mata Uang Global',
+        harga: 'Rp 16.120,45',
+        perubahan: '+1.20% 🟢',
+        sinyal: 'naik'
+    }
+};
+
+const urlParams = new URLSearchParams(window.location.search);
+const pasar = urlParams.get('pasar') || 'kripto';
+const data = dataPasar[pasar] || dataPasar.kripto;
+
+document.getElementById('pasar').textContent = data.judul;
+document.getElementById('sub').textContent = data.deskripsi;
+document.getElementById('harga').textContent = data.harga;
+document.getElementById('perubahan').textContent = data.perubahan;
+
+const sinyalEl = document.getElementById('sinyal-ai');
+if (data.sinyal === 'naik') {
+    sinyalEl.className = 'sinyal-ai sinyal-naik';
+    sinyalEl.innerHTML = '🟢 NAIK — Potensi Menguat';
+} else {
+    sinyalEl.className = 'sinyal-ai sinyal-turun';
+    sinyalEl.innerHTML = '🔴 TURUN — Potensi Melemah';
+}
+</script>
+
+</body>
 </html>
