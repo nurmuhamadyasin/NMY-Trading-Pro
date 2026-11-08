@@ -88,29 +88,29 @@
         .tombol:hover {
     transform: translateY(-2px);
 }
-/* ✅ TEMPEL KODE ANIMASI DI BAWAH INI */
-
 .tombol-trading {
   position: relative;
-  overflow: hidden;
+ border-radius: 50px;
+    overflow: visible;
 }
 
-@keyframes kilauCahaya {
-  0% { left: -100%; }
-  100% { left: 100%; }
+@keyframes putarCahaya {
+  0% { background-position: 0%50%; }
+  100% { background-position: 400%50%; }
 }
 
-.tombol-trading::after {
+.tombol-trading::before {
   content: '';
   position: absolute;
-  top: 0;
-  left: -100%;
-  width: 50%;
-  height: 100%;
-  background: linear-gradient(90deg, transparent, rgba(255,255,255,0.4), transparent);
+    inset: -4px;
+    border-radius: 54px;
+    background: linear-gradient(90deg, transparent, rgba(255,255,255,0.4), transparent);
   animation: kilauCahaya 2.5s linear infinite;
 }
-
+    background-size: 400%400%;
+    animation: putarCahaya 3s linear infinite;
+    z-index: -1;
+}
         .tautan-bawah {
             display: flex;
             flex-direction: column;
